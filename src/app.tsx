@@ -1,9 +1,10 @@
 import React, { FC } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Nav from './components/nav'
-import Home from './pages/home'
-import About from './pages/about'
-import Contact from './pages/contact'
+import Nav from '~@components/nav'
+import Footer from '~@components/footer'
+import Home from '~@pages/home'
+import About from '~@pages/about'
+import Contact from '~@pages/contact'
 
 const App: FC = () => (
 	<Router>
@@ -13,6 +14,7 @@ const App: FC = () => (
 			<Route path="/about" component={About} />
 			<Route path="/contact" component={Contact} />
 		</Switch>
+		<Footer />
 	</Router>
 )
 

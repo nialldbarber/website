@@ -1,18 +1,15 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
+import { pages } from '~@utils/site-data.ts'
 
 const Nav: FC = () => (
 	<nav>
 		<ul>
-			<li>
-				<Link to="/">Home</Link>
-			</li>
-			<li>
-				<Link to="/about">About</Link>
-			</li>
-			<li>
-				<Link to="/contact">Contact</Link>
-			</li>
+			{pages.map(({ id, title, path }) => (
+				<li key={id}>
+					<Link to={path}>{title}</Link>
+				</li>
+			))}
 		</ul>
 	</nav>
 )
