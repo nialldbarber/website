@@ -1,0 +1,48 @@
+li {
+	display: block;
+	height: 65px;
+	padding: .8rem 0;
+	animation-name: animateIn;
+	animation-duration: .25s;
+	animation-delay: calc(var(--animation-order) * .125s);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(.91, .01, .37, .88);
+
+	& + li {
+		margin-top: 1rem;
+	}
+
+	span {
+		position: relative;
+		display: inline-block;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			height: 4px;
+			width: 0;
+			background: red;
+			z-index: -1;
+			transition: all .25s cubic-bezier(.895, .03, .685, .22) 0s;
+		}
+
+		&:hover {
+			&:after {
+				width: 100%;
+			}
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			height: 100%;
+			width: 100%;
+			font-size: 3rem;
+			transition: .25s cubic-bezier(.91, .01, .37, .88);
+			animation: revealLink backwards .3s ease-out;
+			animation-delay: .3s;
+		}
+	}
+}

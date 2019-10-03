@@ -1,6 +1,12 @@
-body {
+* {
 	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
 	font-family: $font;
+	font-weight: bold;
 	background: $grey;
 	color: $off-white;
 	height: 100%;

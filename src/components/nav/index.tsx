@@ -1,17 +1,20 @@
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
 import { pages } from '~@utils/site-data.ts'
+import { Container } from '~@components/nav/styles.js'
 
 const Nav: FC = () => (
-	<nav>
+	<Container>
 		<ul>
-			{pages.map(({ id, title, path }) => (
-				<li key={id}>
-					<Link to={path}>{title}</Link>
+			{pages.map(({ id, title, path }, i) => (
+				<li key={id} style={{ '--animation-order': i }}>
+					<span>
+						<Link to={path}>{title}</Link>
+					</span>
 				</li>
 			))}
 		</ul>
-	</nav>
+	</Container>
 )
 
 export default Nav
