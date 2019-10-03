@@ -1,10 +1,9 @@
 import React, { FC } from 'react'
 
-const Home: FC = () => (
+const Contact: FC = () => (
 	<div>
-		<h1>Im da App</h1>
-		<p>yes i am</p>
+		<h1>Contact</h1>
 	</div>
 )
 
-export default Home
+export default Contact

@@ -2,8 +2,7 @@ import React, { FC } from 'react'
 
 const Home: FC = () => (
 	<div>
-		<h1>Im da App</h1>
-		<p>yes i am</p>
+		<h1>Home</h1>
 	</div>
 )
 

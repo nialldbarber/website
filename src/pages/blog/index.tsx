@@ -1,0 +1,9 @@
+import React from 'react'
+
+const Blog: FC = () => (
+	<div>
+		<h1>Blog goes here</h1>
+	</div>
+)
+
+export default Blog
