@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
-import { getDate } from '~@utils/site-data.ts'
+import { me, getDate } from '~@utils/site-data.ts'
 
 const Footer: FC = () => (
 	<footer>
-		<p>The footer</p>
+		<span>{`@ ${getDate} ${me.name}`}</span>
 	</footer>
 )
 
