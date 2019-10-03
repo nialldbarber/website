@@ -2,13 +2,13 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-	entry: [ '@babel/polyfill', './src/index' ],
+	entry: ['@babel/polyfill', './src/index'],
 	output: {
 		path: path.join(__dirname, '/dist'),
 		filename: 'bundle.js'
 	},
 	resolve: {
-		extensions: [ '.ts', '.tsx', '.js' ]
+		extensions: ['.ts', '.tsx', '.js']
 	},
 
 	module: {
@@ -22,15 +22,19 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				use: [ 'style-loader', 'css-loader' ]
+				use: ['style-loader', 'css-loader']
 			},
 			{
 				test: /\.scss$/,
-				use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+				use: ['style-loader', 'css-loader', 'sass-loader']
 			},
 			{
 				test: /\.svg$/,
 				loader: 'svg-inline-loader'
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				loader: 'file-loader'
 			}
 		]
 	},

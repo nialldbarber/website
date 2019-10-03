@@ -24,7 +24,7 @@ module.exports = {
 		'no-tabs': 0,
 		'function-paren-newline': 1,
 		semi: [ 'error', 'never' ],
-		'no-trailing-spaces': 'error',
+		'no-trailing-spaces': 0,
 		'no-console': 'off',
 		indent: 0,
 		'no-use-before-define': 0,

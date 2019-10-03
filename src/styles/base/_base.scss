@@ -1,6 +1,15 @@
 body {
 	box-sizing: border-box;
+	font-family: $font;
 	background: $grey;
+	color: $off-white;
+	height: 100%;
+}
+
+#root {
+	display: grid;
+	grid-template-rows: $logo-height 1fr 60px;
+	min-height: 100vh;
 }
 
 ul {

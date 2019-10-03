@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 const Home: FC = () => (
 	<div>
-		<h1>Home</h1>
+		<h1>Niall Barber</h1>
 	</div>
 )
 

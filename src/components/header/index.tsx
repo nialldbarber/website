@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from '~@components/nav'
-import Logo from '~@assets/logo.js'
+import Logo from '~@components/logo/logo.js'
+import { Container } from '~@components/header/styles.js'
 
 const Header: FC = () => (
-	<header>
+	<Container>
 		<Link to="/">
 			<Logo />
 		</Link>
 		<Nav />
-	</header>
+	</Container>
 )
 
 export default Header
