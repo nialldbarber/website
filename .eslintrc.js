@@ -20,7 +20,8 @@ module.exports = {
 	},
 	plugins: [ 'react' ],
 	rules: {
-		allowSingleLine: true,
+		indent: [ 2, 'tab' ],
+		'no-tabs': 0,
 		'function-paren-newline': 1,
 		semi: [ 'error', 'never' ],
 		'no-trailing-spaces': 'error',
