@@ -12,14 +12,19 @@ li {
 		margin-top: 1rem;
 	}
 
-	span {
+	a {
 		position: relative;
 		display: inline-block;
+		font-size: 3rem;
+		transition: .25s cubic-bezier(.91, .01, .37, .88);
+		animation: revealLink backwards .3s ease-out;
+		animation-delay: .3s;
 
 		&:after {
 			content: '';
 			position: absolute;
 			bottom: 0;
+			left: 0;
 			height: 4px;
 			width: 0;
 			background: red;
@@ -27,22 +32,11 @@ li {
 			transition: all .25s cubic-bezier(.895, .03, .685, .22) 0s;
 		}
 
-		&:hover {
+		&:hover,
+		&.active {
 			&:after {
 				width: 100%;
 			}
-		}
-
-		a {
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			height: 100%;
-			width: 100%;
-			font-size: 3rem;
-			transition: .25s cubic-bezier(.91, .01, .37, .88);
-			animation: revealLink backwards .3s ease-out;
-			animation-delay: .3s;
 		}
 	}
 }

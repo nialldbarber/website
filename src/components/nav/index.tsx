@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { pages } from '~@utils/site-data.ts'
 import { Container } from '~@components/nav/styles.js'
 
@@ -8,9 +8,9 @@ const Nav: FC = () => (
 		<ul>
 			{pages.map(({ id, title, path }, i) => (
 				<li key={id} style={{ '--animation-order': i }}>
-					<span>
-						<Link to={path}>{title}</Link>
-					</span>
+					<NavLink exact to={path} activeClassName="active">
+						<span>{title}</span>
+					</NavLink>
 				</li>
 			))}
 		</ul>

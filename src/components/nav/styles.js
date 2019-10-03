@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.nav`
-	opacity: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
