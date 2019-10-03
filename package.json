@@ -60,5 +60,10 @@
 		"stylelint-config-recommended-scss": "^4.0.0",
 		"stylelint-scss": "^3.11.1",
 		"uuid": "^3.3.3"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm build"
+		}
 	}
 }
