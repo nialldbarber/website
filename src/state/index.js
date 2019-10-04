@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react'
 import PropTypes from 'prop-types'
-import { menuReducer } from '../reducers/menu'
+import { menuReducer } from '~@reducers/menu'
 
 const AppContext = createContext()
 
