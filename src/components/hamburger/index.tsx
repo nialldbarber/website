@@ -1,13 +1,19 @@
 import React, { FC, useContext } from 'react'
-import { AppContext } from '~@context/index.js'
+import { AppContext } from '~@state/index.js'
+import { Burger } from '~@components/hamburger/styles.js'
+import { CHANGE_HAMBURGER } from '~@constants/hamburger'
 
 const Hamburger: FC = () => {
-	const nav = useContext(AppContext)
-	console.log(nav)
+	const { state, dispatch } = useContext(AppContext)
+	const { navOpen } = state
+
 	return (
-		<div>
-			<p>hamburger</p>
-		</div>
+		<Burger
+			className={`hamburger ${navOpen ? 'open' : ''}`}
+			onClick={() => dispatch({ type: CHANGE_HAMBURGER })}
+		>
+			<span />
+		</Burger>
 	)
 }
 
