@@ -28,6 +28,7 @@
 		"eslint-config-airbnb": "^18.0.1",
 		"eslint-config-prettier": "^6.3.0",
 		"eslint-config-wesbos": "0.0.19",
+		"eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
 		"eslint-plugin-html": "^6.0.0",
 		"eslint-plugin-import": "^2.18.2",
 		"eslint-plugin-jsx-a11y": "^6.2.3",
@@ -47,9 +48,12 @@
 		"webpack-dev-server": "^3.8.1"
 	},
 	"dependencies": {
+		"@babel/plugin-transform-typescript": "^7.6.0",
 		"@babel/polyfill": "^7.6.0",
 		"@types/react": "^16.9.4",
 		"@types/react-dom": "^16.9.1",
+		"@types/react-router-dom": "^5.1.0",
+		"@types/uuid": "^3.4.5",
 		"babel-plugin-root-import": "^6.4.1",
 		"node-sass": "^4.12.0",
 		"prop-types": "^15.7.2",

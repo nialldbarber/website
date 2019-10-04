@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { me, getDate } from '~@utils/site-data.ts'
+import { me, getDate } from '~@utils/site-data'
 import { Container } from '~@components/footer/styles.js'
 
 const Footer: FC = () => (

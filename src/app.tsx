@@ -9,18 +9,18 @@ import Contact from '~@pages/contact'
 import '~@styles/main.scss'
 
 const App: FC = () => (
-	<Router>
-		<Header />
-		<main>
-			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route path="/about" component={About} />
-				<Route path="/blog" component={Blog} />
-				<Route path="/contact" component={Contact} />
-			</Switch>
-		</main>
-		<Footer />
-	</Router>
+  <Router>
+    <Header />
+    <main>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </main>
+    <Footer />
+  </Router>
 )
 
 export default App
