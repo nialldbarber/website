@@ -8,7 +8,8 @@ export const Burger = styled.button`
 	outline: none;
 	width: 50px;
 	height: 40px;
-	
+	z-index: 4;
+
 	&:before, &:after, span {
 		content: "";
 		position: absolute;
