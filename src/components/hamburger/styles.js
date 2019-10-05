@@ -20,8 +20,7 @@ export const Burger = styled.button`
 		background: #fff;
 		height: 3px;
 		width: 32px;
-		transition: transform .12s cubic-bezier(.25, .46, .45, .94),
-			-webkit-transform .12s cubic-bezier(.25, .46, .45, .94);
+		transition: transform .12s cubic-bezier(.25, .46, .45, .94);
 	}
 
 	&:before {
@@ -39,6 +38,20 @@ export const Burger = styled.button`
 
 		&:after {
 			transform: translateY(10px);
+		}
+	}
+
+	&.open {
+		span {
+			display: none;
+		}
+
+		&:before {
+			transform: translateY(4px);
+		}
+
+		&:after {
+			transform: translateY(-4px);
 		}
 	}
 `
