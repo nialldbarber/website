@@ -21,19 +21,21 @@ export const Container = styled.nav`
 
 export const Backdrop = styled.div`
 	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
+	top: -100%;
+	right: -100%;
+	bottom: 100%;
 	left: 100%;
-	background: #1e272d;
+	background: #f95484;
+	border-radius: 50%;
 	justify-content: center;
 	align-items: center;
 	z-index: 2;
 	text-align: center;
 	overflow: hidden;
-	transition: left .25s cubic-bezier(.895, .03, .685, .22) 0s;
+	transform: scale(0) translateZ(0);
+	transition: all .3s cubic-bezier(.895, .03, .685, .4) 0s;
 
 	&.show {
-		left: 0;
+		transform: scale(4.5) translateZ(0);
 	}
 `

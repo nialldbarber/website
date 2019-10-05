@@ -27,7 +27,7 @@ li {
 			left: 0;
 			height: 4px;
 			width: 0;
-			background: red;
+			background: $white;
 			z-index: -1;
 			transition: all .25s cubic-bezier(.895, .03, .685, .22) 0s;
 		}

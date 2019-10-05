@@ -2,7 +2,8 @@ import React, { FC } from 'react'
 
 const Home: FC = () => (
 	<div>
-		<h1>-</h1>
+		<h1>Niall Barber</h1>
+		<p>Front End Developer</p>
 	</div>
 )
 
