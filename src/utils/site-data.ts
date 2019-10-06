@@ -1,4 +1,7 @@
 import uuid from 'uuid'
+import github from '../assets/images/github.svg'
+import instagram from '../assets/images/instagram.svg'
+import linkedin from '../assets/images/linkedin.svg'
 
 /**
  * My details
@@ -36,12 +39,13 @@ interface Social {
 	id: string
 	title: string
 	url: string
+	icon: string
 }
 
 export const socialLinks: Social[] = [
-	{ id: uuid(), title: 'Home', url: '/' },
-	{ id: uuid(), title: 'About', url: '/about' },
-	{ id: uuid(), title: 'Contact', url: '/contact' }
+	{ id: uuid(), title: 'Github', url: '/', icon: github },
+	{ id: uuid(), title: 'Instagram', url: '/about', icon: instagram },
+	{ id: uuid(), title: 'LinkedIn', url: '/contact', icon: linkedin }
 ]
 
 /**

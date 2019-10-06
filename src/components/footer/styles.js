@@ -2,7 +2,16 @@ import styled from 'styled-components'
 
 export const Container = styled.footer`
 	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	padding-right: 2rem;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 0 2rem 1rem;
+
+	svg {
+		margin: 0 .5rem;
+		padding-bottom: .5rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 `
