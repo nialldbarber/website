@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/react-hooks'
 import { GET_ABOUT } from '~@pages/about/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
+import { Header } from '~@styles/styled-components/header'
 
 const About: FC = () => {
 	const { loading, error, data } = useQuery(GET_ABOUT)
@@ -12,7 +13,7 @@ const About: FC = () => {
 
 	return (
 		<div className="container">
-			<h1>{schema.title}</h1>
+			<Header>{schema.title}</Header>
 			<p>{schema.content}</p>
 		</div>
 	)

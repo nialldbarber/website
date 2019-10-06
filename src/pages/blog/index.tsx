@@ -1,8 +1,10 @@
 import React, { FC } from 'react'
+import { Header } from '~@styles/styled-components/header'
 
 const Blog: FC = () => (
-	<div>
-		<h1>Blog goes here</h1>
+	<div className="container">
+		<Header>Blog</Header>
+		<p>Blogoggggg</p>
 	</div>
 )
 

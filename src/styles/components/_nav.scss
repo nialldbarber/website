@@ -15,7 +15,7 @@ li {
 	a {
 		position: relative;
 		display: inline-block;
-		font-size: 3rem;
+		font-size: 4rem;
 		transition: .25s cubic-bezier(.91, .01, .37, .88);
 		animation: revealLink backwards .3s ease-out;
 		animation-delay: .3s;
@@ -23,7 +23,7 @@ li {
 		&:after {
 			content: '';
 			position: absolute;
-			bottom: 0;
+			bottom: .5rem;
 			left: 0;
 			height: 4px;
 			width: 0;
