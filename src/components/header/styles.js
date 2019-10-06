@@ -4,5 +4,5 @@ export const Container = styled.header`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 1.5rem;
+	padding: 0 2rem 0 1.5rem;
 `
