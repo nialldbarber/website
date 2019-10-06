@@ -24,11 +24,11 @@ export const Burger = styled.button`
 	}
 
 	&:before {
-		transform: translateY(-8px);
+		transform: translateY(-8px) rotate(0);
 	}
 
 	&:after {
-		transform: translateY(8px);
+		transform: translateY(8px) rotate(0);
 	}
 
 	&:hover {
@@ -47,11 +47,11 @@ export const Burger = styled.button`
 		}
 
 		&:before {
-			transform: translateY(4px);
+			transform: translateY(4px) rotate(90deg);
 		}
 
 		&:after {
-			transform: translateY(-4px);
+			transform: translateY(-4px) rotate(90deg);
 		}
 	}
 `
