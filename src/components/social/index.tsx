@@ -1,5 +1,4 @@
 import React, { FC, Fragment } from 'react'
-import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import SVG from 'react-inlinesvg'
 import { socialLinks } from '~@utils/site-data'
@@ -9,11 +8,11 @@ const Social: FC = () => (
 	<Container>
 		{socialLinks.map(({ id, title, url, icon }) => (
 			<Fragment key={id}>
-				<Link to={url} target="_blank" rel="noopener">
+				<a href={url} target="_blank" rel="noopener noreferrer">
 					<Icon>
 						<SVG src={icon} alt={title} width={30} />
 					</Icon>
-				</Link>
+				</a>
 			</Fragment>
 		))}
 	</Container>

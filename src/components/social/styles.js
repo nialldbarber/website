@@ -5,9 +5,10 @@ export const Container = styled.div`display: flex;`
 export const Icon = styled.div`
 	svg {
 		transform: scale(1);
+		transition: all .1s ease;
 
 		&:hover {
-			transform: scale(1.1);
+			transform: scale(1.05);
 		}
 	}
 `
