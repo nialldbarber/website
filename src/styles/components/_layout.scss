@@ -1,3 +1,19 @@
 .container {
 	padding: $side-padding;
+
+	h1 {
+		animation-name: slideInLeft;
+		animation-duration: .3s;
+		animation-fill-mode: both;
+		animation-delay: .125s;
+		animation-timing-function: cubic-bezier(.91, .01, .37, .88);
+	}
+}
+
+.content {
+	animation-name: slideInRight;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+	animation-delay: .27s;
+	animation-timing-function: cubic-bezier(.91, .01, .37, .88);
 }

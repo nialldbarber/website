@@ -4,6 +4,7 @@ import { GET_HOME } from '~@pages/home/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
 import { Header } from '~@styles/styled-components/header'
+import { Content } from '~@styles/styled-components/content'
 
 const Home: FC = () => {
 	const { loading, error, data } = useQuery(GET_HOME)
@@ -14,7 +15,9 @@ const Home: FC = () => {
 	return (
 		<div className="container">
 			<Header>{schema.title}</Header>
-			<p>{schema.content}</p>
+			<Content className="content">
+				<p>{schema.content}</p>
+			</Content>
 		</div>
 	)
 }

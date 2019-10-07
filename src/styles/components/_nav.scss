@@ -1,41 +1,47 @@
-li {
-	display: block;
-	height: 65px;
-	padding: .8rem 0;
-	animation-name: animateIn;
-	animation-duration: .25s;
-	animation-delay: calc(var(--animation-order) * .125s);
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(.91, .01, .37, .88);
+nav {
+	li {
+		display: block;
+		height: 65px;
+		padding: .8rem 0;
+		animation-name: animateIn;
+		animation-duration: .25s;
+		animation-delay: calc(var(--animation-order) * .125s);
+		animation-fill-mode: both;
+		animation-timing-function: cubic-bezier(.91, .01, .37, .88);
 
-	& + li {
-		margin-top: 1rem;
-	}
-
-	a {
-		position: relative;
-		display: inline-block;
-		font-size: 4rem;
-		transition: .25s cubic-bezier(.91, .01, .37, .88);
-		animation: revealLink backwards .3s ease-out;
-		animation-delay: .3s;
-
-		&:after {
-			content: '';
-			position: absolute;
-			bottom: .5rem;
-			left: 0;
-			height: 4px;
-			width: 0;
-			background: $white;
-			z-index: -1;
-			transition: all .25s cubic-bezier(.895, .03, .685, .22) 0s;
+		& + li {
+			margin-top: 1rem;
 		}
 
-		&:hover,
-		&.active {
+		a {
+			position: relative;
+			display: inline-block;
+			font-size: 4rem;
+			color: $white;
+			transition: .25s cubic-bezier(.91, .01, .37, .88);
+			animation: revealLink backwards .3s ease-out;
+			animation-delay: .3s;
+
+			text-shadow: -1px -1px $pink, 1px 1px $pink, -1px 1px $pink, 1px -1px $pink, -1px -1px $pink, 1px 1px $pink,
+				-1px 1px $pink, 1px -1px $pink;
+
 			&:after {
-				width: 100%;
+				content: '';
+				position: absolute;
+				bottom: .5rem;
+				left: 0;
+				height: 4px;
+				width: 0;
+				background: $white;
+				z-index: -1;
+				transition: all .25s cubic-bezier(.895, .03, .685, .22) 0s;
+			}
+
+			&:hover,
+			&.active {
+				&:after {
+					width: 100%;
+				}
 			}
 		}
 	}

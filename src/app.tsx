@@ -6,6 +6,7 @@ import Header from '~@components/header'
 import Footer from '~@components/footer'
 import Home from '~@pages/home'
 import About from '~@pages/about'
+import TechStack from '~@pages/tech-stack'
 import Blog from '~@pages/blog'
 import Contact from '~@pages/contact'
 import '~@styles/main.scss'
@@ -20,6 +21,7 @@ const App: FC = () => (
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route path="/about" component={About} />
+					<Route path="/tech-stack" component={TechStack} />
 					<Route path="/blog" component={Blog} />
 					<Route path="/contact" component={Contact} />
 				</Switch>

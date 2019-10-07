@@ -6,12 +6,16 @@ export const Container = styled.footer`
 	align-items: flex-end;
 	padding: 0 2rem 1rem;
 
-	svg {
-		margin: 0 .5rem;
-		padding-bottom: .5rem;
+	a {
+		svg {
+			margin: 0 .5rem;
+			padding-bottom: .5rem;
+		}
 
 		&:last-child {
-			margin-right: 0;
+			svg {
+				margin-right: 0;
+			}
 		}
 	}
 `

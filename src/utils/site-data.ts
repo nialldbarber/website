@@ -1,7 +1,7 @@
 import uuid from 'uuid'
-import github from '../assets/images/github.svg'
-import instagram from '../assets/images/instagram.svg'
-import linkedin from '../assets/images/linkedin.svg'
+import github from '~@assets/images/github.svg'
+import instagram from '~@assets/images/instagram.svg'
+import linkedin from '~@assets/images/linkedin.svg'
 
 /**
  * My details
@@ -28,6 +28,7 @@ interface Pages {
 export const pages: Pages[] = [
 	{ id: uuid(), title: 'Home', path: '/' },
 	{ id: uuid(), title: 'About', path: '/about' },
+	{ id: uuid(), title: 'Tech Stack', path: '/tech-stack' },
 	{ id: uuid(), title: 'Blog', path: '/blog' },
 	{ id: uuid(), title: 'Contact', path: '/contact' }
 ]
@@ -43,9 +44,9 @@ interface Social {
 }
 
 export const socialLinks: Social[] = [
-	{ id: uuid(), title: 'Github', url: '/', icon: github },
-	{ id: uuid(), title: 'Instagram', url: '/about', icon: instagram },
-	{ id: uuid(), title: 'LinkedIn', url: '/contact', icon: linkedin }
+	{ id: uuid(), title: 'Github', url: 'https://github.com/nialldbarber', icon: github },
+	{ id: uuid(), title: 'Instagram', url: 'https://www.instagram.com/nialldbarber/', icon: instagram },
+	{ id: uuid(), title: 'LinkedIn', url: 'https://www.linkedin.com/in/niall-barber/', icon: linkedin }
 ]
 
 /**

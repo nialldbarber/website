@@ -53,6 +53,7 @@ module.exports = {
 		'import/imports-first': 1,
 		'import/extensions': 0,
 		'import/prefer-default-export': 0,
-		curly: 2
+		curly: 2,
+		'object-curly-newline': 0
 	}
 }

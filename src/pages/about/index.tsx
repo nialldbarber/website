@@ -4,6 +4,7 @@ import { GET_ABOUT } from '~@pages/about/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
 import { Header } from '~@styles/styled-components/header'
+import { Content } from '~@styles/styled-components/content'
 
 const About: FC = () => {
 	const { loading, error, data } = useQuery(GET_ABOUT)
@@ -14,7 +15,9 @@ const About: FC = () => {
 	return (
 		<div className="container">
 			<Header>{schema.title}</Header>
-			<p>{schema.content}</p>
+			<Content className="content">
+				<p>{schema.content}</p>
+			</Content>
 		</div>
 	)
 }
