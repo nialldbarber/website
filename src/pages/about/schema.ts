@@ -6,6 +6,7 @@ export const GET_ABOUT = gql`
 			id
 			title
 			content
+			pageContent
 		}
 	}
 `

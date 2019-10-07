@@ -6,7 +6,7 @@
 		animation-duration: .3s;
 		animation-fill-mode: both;
 		animation-delay: .125s;
-		animation-timing-function: cubic-bezier(.91, .01, .37, .88);
+		animation-timing-function: cubic-bezier(.4, 0, 0, .88);
 	}
 }
 
@@ -15,5 +15,9 @@
 	animation-duration: .3s;
 	animation-fill-mode: both;
 	animation-delay: .27s;
-	animation-timing-function: cubic-bezier(.91, .01, .37, .88);
+	animation-timing-function: cubic-bezier(.4, 0, 0, .88);
+
+	p {
+		font-weight: normal;
+	}
 }

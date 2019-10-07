@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { useQuery } from '@apollo/react-hooks'
+import ReactMarkdown from 'react-markdown'
 import { GET_ABOUT } from '~@pages/about/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
@@ -16,7 +17,7 @@ const About: FC = () => {
 		<div className="container">
 			<Header>{schema.title}</Header>
 			<Content className="content">
-				<p>{schema.content}</p>
+				<ReactMarkdown source={schema.pageContent} escapeHtml={false} />
 			</Content>
 		</div>
 	)

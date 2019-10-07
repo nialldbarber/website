@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Header = styled.h1`
 	position: relative;
 	margin: 0;
-	font-size: 8rem;
+	font-size: 10rem;
 	display: inline-block;
 
 	&:after {
