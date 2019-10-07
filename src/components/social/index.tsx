@@ -3,17 +3,20 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import SVG from 'react-inlinesvg'
 import { socialLinks } from '~@utils/site-data'
+import { Container, Icon } from '~@components/social/styles'
 
 const Social: FC = () => (
-	<div>
+	<Container>
 		{socialLinks.map(({ id, title, url, icon }) => (
 			<Fragment key={id}>
 				<Link to={url} target="_blank" rel="noopener">
-					<SVG src={icon} alt={title} width={30} />
+					<Icon>
+						<SVG src={icon} alt={title} width={30} />
+					</Icon>
 				</Link>
 			</Fragment>
 		))}
-	</div>
+	</Container>
 )
 
 export default Social

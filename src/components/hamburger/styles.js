@@ -18,9 +18,13 @@ export const Burger = styled.button`
 		left: 50%;
 		top: 50%;
 		background: #fff;
-		height: 3px;
+		height: 2px;
 		width: 32px;
-		transition: transform .12s cubic-bezier(.25, .46, .45, .94);
+		transition: all .12s cubic-bezier(.25, .46, .45, .94);
+	}
+
+	span {
+		width: 25px;
 	}
 
 	&:before {
@@ -29,15 +33,22 @@ export const Burger = styled.button`
 
 	&:after {
 		transform: translateY(8px) rotate(0);
+		width: 18px;
 	}
 
 	&:hover {
+		span {
+			width: 32px;
+		}
+
 		&:before {
 			transform: translateY(-10px);
+			width: 32px;
 		}
 
 		&:after {
 			transform: translateY(10px);
+			width: 32px;
 		}
 	}
 
@@ -52,6 +63,7 @@ export const Burger = styled.button`
 
 		&:after {
 			transform: translateY(-4px) rotate(90deg);
+			width: 32px;
 		}
 	}
 `
