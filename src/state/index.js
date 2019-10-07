@@ -1,5 +1,4 @@
 import React, { createContext, useReducer } from 'react'
-import PropTypes from 'prop-types'
 import { menuReducer } from '~@reducers/menu'
 
 const AppContext = createContext()
@@ -18,7 +17,3 @@ function Provider(props) {
 const ContextOneConsumer = AppContext.Consumer
 
 export { AppContext, Provider, ContextOneConsumer }
-
-Provider.propTypes = {
-	children: PropTypes.object
-}

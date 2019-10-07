@@ -1,7 +1,5 @@
 import React from 'react'
-import {
- Container, st0, st1, st2 
-} from '~@components/logo/styles'
+import { Container, st0, st1, st2 } from '~@components/logo/styles'
 
 const Logo = () => (
 	<Container>
