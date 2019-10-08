@@ -2,8 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
 	display: inline-flex;
+	flex-wrap: wrap;
 	background: #181c22;
-	padding: 4rem 0 2rem;
+	padding: 3.5rem 0 2rem;
+  max-width: 640px;
 	border-radius: 4px;
 	border-bottom: 3px solid #f95584;
 	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
@@ -14,5 +16,10 @@ export const Skill = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 130px;
+	width: 160px;
+	min-height: 160px;
+
+	svg {
+		min-height: 100px;
+	}
 `

@@ -9,7 +9,7 @@ const Stack = ({ type, stack }) => (
 		<Container>
 			{stack.map(({ id, skill, icon }) => (
 				<Skill key={id}>
-					<SVG src={icon} alt={skill} width={70} />
+					<SVG src={icon} alt={skill} width={90} />
 					<p>{skill}</p>
 				</Skill>
 			))}

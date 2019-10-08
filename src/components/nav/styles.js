@@ -15,6 +15,7 @@ export const Container = styled.nav`
 	}
 
 	&.show {
+		position: fixed;
 		display: block;
 	}
 `

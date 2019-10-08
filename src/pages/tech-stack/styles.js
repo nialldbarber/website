@@ -7,7 +7,7 @@ export const StackContainer = styled.div`
 
 	h2 {
 		position: absolute;
-		top: -4rem;
+		top: -2.2rem;
 		left: 1rem;
 		padding: 0.3rem 1rem;
 		font-size: 2.5rem;

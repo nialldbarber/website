@@ -1,6 +1,10 @@
 import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.header`
+	position: sticky;
+	top: 0;
+	background: #1e272d;
+	z-index: 2;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

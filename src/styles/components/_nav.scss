@@ -21,16 +21,15 @@ nav {
 			transition: .25s cubic-bezier(.91, .01, .37, .88);
 			animation: revealLink backwards .3s ease-out;
 			animation-delay: .3s;
-
 			text-shadow: -1px -1px $pink, 1px 1px $pink, -1px 1px $pink, 1px -1px $pink, -1px -1px $pink, 1px 1px $pink,
 				-1px 1px $pink, 1px -1px $pink;
 
 			&:after {
 				content: '';
 				position: absolute;
-				bottom: .5rem;
+				bottom: 1rem;
 				left: 0;
-				height: 4px;
+				height: 3px;
 				width: 0;
 				background: $white;
 				z-index: -1;

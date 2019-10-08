@@ -8,9 +8,12 @@ import css from '~@assets/images/css.svg'
 import js from '~@assets/images/js.svg'
 import react from '~@assets/images/react.svg'
 import redux from '~@assets/images/redux.svg'
+import vue from '~@assets/images/vue.svg'
+import svelte from '~@assets/images/svelte.svg'
 import node from '~@assets/images/node.svg'
 import graphql from '~@assets/images/graphql.svg'
 import apollo from '~@assets/images/apollo.svg'
+import express from '~@assets/images/express.svg'
 
 /**
  * My details
@@ -72,13 +75,16 @@ export const frontEnd: Skills[] = [
 	{ id: uuid(), skill: 'CSS', icon: css },
 	{ id: uuid(), skill: 'JavaScript', icon: js },
 	{ id: uuid(), skill: 'React', icon: react },
-	{ id: uuid(), skill: 'Redux', icon: redux }
+	{ id: uuid(), skill: 'Redux', icon: redux },
+	{ id: uuid(), skill: 'Vue', icon: vue },
+	{ id: uuid(), skill: 'Svelte', icon: svelte },
 ]
 
 export const backEnd: Skills[] = [
 	{ id: uuid(), skill: 'Node', icon: node },
 	{ id: uuid(), skill: 'GraphQL', icon: graphql },
-	{ id: uuid(), skill: 'Apollo', icon: apollo }
+	{ id: uuid(), skill: 'Apollo', icon: apollo },
+	{ id: uuid(), skill: 'Express', icon: express }
 ]
 
 /**
