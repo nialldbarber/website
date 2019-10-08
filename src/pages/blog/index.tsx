@@ -4,8 +4,9 @@ import { useQuery } from '@apollo/react-hooks'
 import { GET_POSTS } from '~@pages/blog/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
+import PostCard from '~@components/post-card'
 import { Header } from '~@styles/styled-components/header'
-import { Content } from '~@styles/styled-components/content'
+import { BlogPageContent } from '~@styles/styled-components/content'
 
 const Blog: FC = () => {
 	const { loading, error, data } = useQuery(GET_POSTS)
@@ -16,13 +17,13 @@ const Blog: FC = () => {
 	return (
 		<div className="container">
 			<Header>Blog</Header>
-			<Content className="content">
+			<BlogPageContent className="content">
 				{schema.map(({ id, title }) => (
 					<Link key={id} to={`/post/${id}`}>
-						<h3>{title}</h3>
+						<PostCard title={title} />
 					</Link>
 				))}
-			</Content>
+			</BlogPageContent>
 		</div>
 	)
 }
