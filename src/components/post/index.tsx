@@ -5,8 +5,9 @@ import ReactMarkdown from 'react-markdown'
 import { GET_INDIVIDUAL_POST } from '~@components/post/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
+import Breadcrums from '~@components/breadcrums'
 import { BlogHeader } from '~@styles/styled-components/header'
-import { Content } from '~@styles/styled-components/content'
+import { BlogContent } from '~@styles/styled-components/content'
 
 const Post: FC = ({ match }) => {
 	const { loading, error, data } = useQuery(GET_INDIVIDUAL_POST, {
@@ -19,8 +20,11 @@ const Post: FC = ({ match }) => {
 
 	return (
 		<div className="container">
+			<Breadcrums />
 			<BlogHeader>{title}</BlogHeader>
-			<ReactMarkdown source={description} />
+			<BlogContent className="content">
+				<ReactMarkdown source={description} />
+			</BlogContent>
 		</div>
 	)
 }

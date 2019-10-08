@@ -18,6 +18,15 @@ export const BlogPageContent = styled.div`
 	padding: 2rem 2rem 2rem 1rem;
 `
 
+export const BlogContent = styled.div`
+	padding: 1rem 2rem 2rem 1rem;
+
+	p {
+		margin: 1rem 0;
+		font-size: 1.1rem;
+	}
+`
+
 export const Card = styled.div`
 	position: relative;
 	display: inline-flex;
