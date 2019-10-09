@@ -16,6 +16,6 @@ export const StackContainer = styled.div`
 		left: 1rem;
 		padding: 0.3rem 1rem;
 		font-size: 2.5rem;
-		color: #f95584;
+		color: ${(props) => props.theme.pink};
 	}
 `

@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
+const size = 100
+
 export const Container = styled.nav`
-	display: none;
 	position: absolute;
+	display: none;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -22,19 +24,19 @@ export const Container = styled.nav`
 
 export const Backdrop = styled.div`
 	position: fixed;
-	top: -100%;
-	right: -100%;
-	bottom: 100%;
-	left: 100%;
-	background: #f95484;
-	border-radius: 50%;
 	justify-content: center;
 	align-items: center;
-	z-index: 2;
 	text-align: center;
+	top: -${size}%;
+	right: -${size}%;
+	bottom: ${size}%;
+	left: ${size}%;
+	background: ${(props) => props.theme.pink};
+	border-radius: 50%;
 	overflow: hidden;
 	transform: scale(0) translateZ(0);
 	transition: all .3s cubic-bezier(.895, .03, .685, .4) 0s;
+	z-index: 2;
 
 	&.show {
 		transform: scale(4.5) translateZ(0);

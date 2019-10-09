@@ -2,13 +2,13 @@ import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.header`
 	position: sticky;
-	top: 0;
-	background: #1e272d;
-	z-index: 2;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	top: 0;
+	background: ${(props) => props.theme.grey};
 	padding: 0 2rem 0 1.5rem;
+	z-index: 2;
 `
 
 const appearFromBottom = keyframes`
@@ -23,16 +23,16 @@ const appearFromBottom = keyframes`
 
 export const LogoContainer = styled.div`
 	.outer {
-		display: block;
 		position: relative;
+		display: block;
 		width: 100px;
 		height: 100px;
 		overflow: hidden;
 	}
 
 	.inner {
-		display: block;
 		position: absolute;
+		display: block;
 		animation-name: ${appearFromBottom};
 		animation-duration: .5s;
 		animation-fill-mode: both;

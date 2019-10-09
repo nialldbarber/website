@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 
+const length = 32
+
 export const Burger = styled.button`
 	position: relative;
-	cursor: pointer;
+	width: 65px;
+	height: 40px;
 	background: transparent;
 	border: none;
 	outline: none;
-	width: 65px;
-	height: 40px;
+	cursor: pointer;
 	z-index: 4;
 
 	&:before,
@@ -17,9 +19,9 @@ export const Burger = styled.button`
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		background: #fff;
+		background: ${(props) => props.theme.white};
 		height: 2px;
-		width: 32px;
+		width: ${length}px;
 		transition: all .12s cubic-bezier(.25, .46, .45, .94);
 	}
 
@@ -38,17 +40,17 @@ export const Burger = styled.button`
 
 	&:hover {
 		span {
-			width: 32px;
+			width: ${length}px;
 		}
 
 		&:before {
 			transform: translateY(-10px);
-			width: 32px;
+			width: ${length}px;
 		}
 
 		&:after {
 			transform: translateY(10px);
-			width: 32px;
+			width: ${length}px;
 		}
 	}
 
@@ -63,7 +65,7 @@ export const Burger = styled.button`
 
 		&:after {
 			transform: translateY(-4px) rotate(90deg);
-			width: 32px;
+			width: ${length}px;
 		}
 	}
 `

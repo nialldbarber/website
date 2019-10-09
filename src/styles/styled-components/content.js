@@ -31,18 +31,18 @@ export const Card = styled.div`
 	position: relative;
 	display: inline-flex;
 	flex-wrap: wrap;
-	background: #181c22;
+	background: ${(props) => props.theme.darkBlue};
 	width: 100%;
 	min-height: 200px;
 	overflow: hidden;
 	padding: 2rem 1rem;
 	border-radius: 4px;
-	border-bottom: 3px solid #f95584;
+	border-bottom: 3px solid ${(props) => props.theme.pink};
 	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
 
 	h3 {
 		padding: 0.3rem 1rem;
-		color: #f95584;
+		color: ${(props) => props.theme.pink};
 	}
 
 	svg {
