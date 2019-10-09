@@ -7,7 +7,7 @@ import { Card } from '~@styles/styled-components/content'
 const PostCard: FC = ({ title, type }) => (
 	<Card>
 		<SVG src={getIcon(type)} alt="Icon" width={50} />
-		{title}
+		<h3>{title}</h3>
 	</Card>
 )
 

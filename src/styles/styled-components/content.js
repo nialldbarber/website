@@ -6,7 +6,7 @@ export const Content = styled.div`
 	padding-top: 1rem;
 
 	p {
-		margin-bottom: 0;
+		margin: 0 1rem 1rem;
 		font-size: 1.8rem;
 	}
 `

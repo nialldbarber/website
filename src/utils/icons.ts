@@ -16,7 +16,7 @@ import graphql from '~@assets/images/graphql.svg'
 import apollo from '~@assets/images/apollo.svg'
 import express from '~@assets/images/express.svg'
 
-export const getIcon = (icon) => {
+export const getIcon = (icon: string) => {
 	switch (icon) {
 		case 'React':
 			return react
