@@ -33,6 +33,8 @@ export const Card = styled.div`
 	flex-wrap: wrap;
 	background: #181c22;
 	width: 100%;
+	min-height: 200px;
+	overflow: hidden;
 	padding: 2rem 1rem;
 	border-radius: 4px;
 	border-bottom: 3px solid #f95584;
@@ -41,5 +43,21 @@ export const Card = styled.div`
 	h3 {
 		padding: 0.3rem 1rem;
 		color: #f95584;
+	}
+
+	svg {
+		position: absolute;
+		width: 100%;
+		opacity: .05;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		transition: opacity .15s ease;
+	}
+
+	&:hover {
+		svg {
+			opacity: .5;
+		}
 	}
 `

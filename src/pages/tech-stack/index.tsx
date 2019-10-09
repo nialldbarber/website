@@ -21,12 +21,12 @@ const TechStack: FC = () => {
 	return (
 		<div className="container">
 			<Header>{schema.title}</Header>
-			<VizSensor onChange={(isVisible) => setFront(isVisible)}>
+			<VizSensor onChange={(isVisible) => setFront(isVisible)} partialVisibility={true}>
 				<StackContainer style={{ opacity: front ? 1 : 0.25, transition: 'opacity .25s linear' }}>
 					<Stack type="Front End" stack={frontEnd} />
 				</StackContainer>
 			</VizSensor>
-			<VizSensor onChange={(isVisible) => setBack(isVisible)}>
+			<VizSensor onChange={(isVisible) => setBack(isVisible)} partialVisibility={true}>
 				<StackContainer style={{ opacity: back ? 1 : 0.25, transition: 'opacity .25s linear' }}>
 					<Stack type="Back End" stack={backEnd} />
 				</StackContainer>

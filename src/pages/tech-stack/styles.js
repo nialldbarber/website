@@ -4,6 +4,11 @@ export const StackContainer = styled.div`
 	position: relative;
 	display: block;
 	margin-top: 7rem;
+	max-width: 700px;
+
+	&:nth-child(odd) {
+		margin-left: auto;
+	}
 
 	h2 {
 		position: absolute;

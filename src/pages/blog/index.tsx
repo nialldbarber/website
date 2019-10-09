@@ -18,9 +18,9 @@ const Blog: FC = () => {
 		<div className="container">
 			<Header>Blog</Header>
 			<BlogPageContent className="content">
-				{schema.map(({ id, title }) => (
+				{schema.map(({ id, title, type }) => (
 					<Link key={id} to={`/post/${id}`}>
-						<PostCard title={title} />
+						<PostCard title={title} type={type} />
 					</Link>
 				))}
 			</BlogPageContent>
