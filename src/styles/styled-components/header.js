@@ -4,7 +4,11 @@ export const Header = styled.h1`
 	position: relative;
 	display: inline-block;
 	margin: 0;
-	font-size: 10rem;
+	font-size: 8rem;
+
+	&.home {
+		font-size: 10rem;
+	}
 
 	&:after {
 		content: '';

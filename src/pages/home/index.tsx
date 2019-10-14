@@ -14,7 +14,7 @@ const Home: FC = () => {
 
 	return (
 		<div className="container">
-			<Header>{schema.title}</Header>
+			<Header className="home">{schema.title}</Header>
 			<Content className="content">
 				<p>{schema.content}</p>
 			</Content>

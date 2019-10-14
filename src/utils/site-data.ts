@@ -13,6 +13,7 @@ import git from '~@assets/images/git.svg'
 import vue from '~@assets/images/vue.svg'
 import svelte from '~@assets/images/svelte.svg'
 import webpack from '~@assets/images/webpack.svg'
+import sass from '~@assets/images/sass.svg'
 import node from '~@assets/images/node.svg'
 import graphql from '~@assets/images/graphql.svg'
 import apollo from '~@assets/images/apollo.svg'
@@ -80,6 +81,7 @@ export const frontEnd: Skills[] = [
 	{ id: uuid(), skill: 'React', icon: react },
 	{ id: uuid(), skill: 'Redux', icon: redux },
 	{ id: uuid(), skill: 'Git', icon: git },
+	{ id: uuid(), skill: 'Sass', icon: sass },
 	{ id: uuid(), skill: 'TypeScript', icon: ts },
 	{ id: uuid(), skill: 'Vue', icon: vue },
 	{ id: uuid(), skill: 'Svelte', icon: svelte },
