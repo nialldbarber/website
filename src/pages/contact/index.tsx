@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/react-hooks'
 import { GET_CONTACT } from '~@pages/contact/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
+import Form from '~@components/form'
 import { Header } from '~@styles/styled-components/header'
 import { Content } from '~@styles/styled-components/content'
 
@@ -16,7 +17,7 @@ const Contact: FC = () => {
 		<div className="container">
 			<Header>{schema.title}</Header>
 			<Content className="content">
-				<p>{schema.content}</p>
+				<Form />
 			</Content>
 		</div>
 	)
