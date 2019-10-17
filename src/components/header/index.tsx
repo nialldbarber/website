@@ -12,7 +12,7 @@ const Header: FC = () => (
 			<span className="outer">
 				<span className="inner">
 					<Link to="/">
-						<SVG src={logo} alt="hello" width={100} />
+						<SVG src={logo} alt="Logo" width={100} />
 					</Link>
 				</span>
 			</span>
