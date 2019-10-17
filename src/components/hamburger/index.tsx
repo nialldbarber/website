@@ -8,10 +8,7 @@ const Hamburger: FC = () => {
 	const { navOpen } = state
 
 	return (
-		<Burger
-			className={`hamburger ${navOpen ? 'open' : ''}`}
-			onClick={() => dispatch({ type: CHANGE_HAMBURGER })}
-		>
+		<Burger className={`hamburger ${navOpen ? 'open' : ''}`} onClick={() => dispatch({ type: CHANGE_HAMBURGER })}>
 			<span />
 		</Burger>
 	)

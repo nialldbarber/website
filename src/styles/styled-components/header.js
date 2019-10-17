@@ -15,7 +15,7 @@ export const Header = styled.h1`
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 2.5rem;
+		bottom: 2rem;
 		height: 7px;
 		background: ${(props) => props.theme.pink};
 		z-index: -1;
