@@ -18,6 +18,10 @@ import node from '~@assets/images/node.svg'
 import graphql from '~@assets/images/graphql.svg'
 import apollo from '~@assets/images/apollo.svg'
 import express from '~@assets/images/express.svg'
+import photoshop from '~@assets/images/photoshop.svg'
+import illustrator from '~@assets/images/illustrator.svg'
+import figma from '~@assets/images/figma.svg'
+import zeplin from '~@assets/images/zeplin.svg'
 
 /**
  * My details
@@ -93,6 +97,13 @@ export const backEnd: Skills[] = [
 	{ id: uuid(), skill: 'GraphQL', icon: graphql },
 	{ id: uuid(), skill: 'Apollo', icon: apollo },
 	{ id: uuid(), skill: 'Express', icon: express }
+]
+
+export const designTypes: Skills[] = [
+	{ id: uuid(), skill: 'Photoshop', icon: photoshop },
+	{ id: uuid(), skill: 'Illustrator', icon: illustrator },
+	{ id: uuid(), skill: 'Figma', icon: figma },
+	{ id: uuid(), skill: 'Zeplin', icon: zeplin }
 ]
 
 /**
