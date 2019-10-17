@@ -14,9 +14,3 @@ const Breadcrums: FC = () => (
 )
 
 export default Breadcrums
-
-// TODO:
-// add badge
-// arrow to top bottom
-// when scroll past blog post title
-// the title transistions into header
