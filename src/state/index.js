@@ -7,11 +7,11 @@ const initialState = {
 	navOpen: false
 }
 
-function Provider(props) {
+const Provider = ({ children }) => {
 	const [state, dispatch] = useReducer(menuReducer, initialState)
 	const value = { state, dispatch }
 
-	return <AppContext.Provider value={value}>{props.children}</AppContext.Provider>
+	return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }
 
 const ContextOneConsumer = AppContext.Consumer
