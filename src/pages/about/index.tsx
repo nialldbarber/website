@@ -17,7 +17,7 @@ const About: FC = () => {
 		<div className="container">
 			<Header>{schema.title}</Header>
 			<Content className="content">
-				<ReactMarkdown source={schema.pageContent} escapeHtml={false} />
+				<ReactMarkdown source={schema.pageContent} escapeHtml={true} />
 			</Content>
 		</div>
 	)
