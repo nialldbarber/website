@@ -1,17 +1,7 @@
 import React, { FC, Fragment } from 'react'
 import SVG from 'react-inlinesvg'
 import { Container, Skill } from '~@components/stack/styles'
-
-interface Props {
-	type: string,
-	stack: any
-}
-
-interface StackProps {
-	id: string,
-	skill: string,
-	icon: string
-}
+import { Props, StackProps } from '~@components/stack/types'
 
 const Stack: FC<Props> = ({ type, stack }) => (
 	<Fragment>
