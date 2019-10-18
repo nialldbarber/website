@@ -7,10 +7,7 @@ import Error from '~@components/error'
 import Breadcrums from '~@components/breadcrums'
 import { BlogHeader } from '~@styles/styled-components/header'
 import { BlogContent } from '~@styles/styled-components/content'
-
-interface Props {
-	match: any
-}
+import { Props } from '~@components/post/types'
 
 const Post: FC<Props> = ({ match }) => {
 	const { loading, error, data } = useQuery(GET_INDIVIDUAL_POST, {
