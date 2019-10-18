@@ -1,13 +1,23 @@
-import React, { Fragment } from 'react'
-import PropTypes from 'prop-types'
+import React, { FC, Fragment } from 'react'
 import SVG from 'react-inlinesvg'
 import { Container, Skill } from '~@components/stack/styles'
 
-const Stack = ({ type, stack }) => (
+interface Props {
+	type: string,
+	stack: any
+}
+
+interface StackProps {
+	id: string,
+	skill: string,
+	icon: string
+}
+
+const Stack: FC<Props> = ({ type, stack }) => (
 	<Fragment>
 		<h2>{type}</h2>
 		<Container>
-			{stack.map(({ id, skill, icon }) => (
+			{stack.map(({ id, skill, icon }: StackProps) => (
 				<Skill key={id}>
 					<SVG src={icon} alt={skill} width={90} />
 					<p>{skill}</p>
@@ -18,11 +28,3 @@ const Stack = ({ type, stack }) => (
 )
 
 export default Stack
-
-Stack.propTypes = {
-	type: PropTypes.string,
-	stack: PropTypes.array,
-	id: PropTypes.string,
-	skill: PropTypes.string,
-	icon: PropTypes.string
-}
