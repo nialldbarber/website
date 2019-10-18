@@ -3,7 +3,7 @@ module.exports = {
 		browser: true,
 		es6: true
 	},
-	extends: [ 'airbnb/base', 'eslint:recommended', 'plugin:react/recommended' ],
+	extends: ['airbnb/base', 'eslint:recommended', 'plugin:react/recommended'],
 	globals: {
 		Atomics: 'readonly',
 		SharedArrayBuffer: 'readonly'
@@ -18,12 +18,13 @@ module.exports = {
 		ecmaVersion: 2018,
 		sourceType: 'module'
 	},
-	plugins: [ 'react' ],
+	plugins: ['react'],
 	rules: {
-		indent: [ 2, 'tab' ],
+		"react/prop-types": 0,
+		indent: [2, 'tab'],
 		'no-tabs': 0,
 		'function-paren-newline': 1,
-		semi: [ 'error', 'never' ],
+		semi: ['error', 'never'],
 		'no-trailing-spaces': 0,
 		'no-console': 'off',
 		indent: 0,
@@ -35,7 +36,7 @@ module.exports = {
 		'max-len': 'off',
 		'padded-blocks': 0,
 		camelcase: 0,
-		'no-unused-vars': [ 1, { vars: 'local', args: 'after-used' } ],
+		'no-unused-vars': [1, { vars: 'local', args: 'after-used' }],
 		'comma-dangle': 0,
 		'spaced-comment': 0,
 		'default-case': 0,
@@ -46,7 +47,7 @@ module.exports = {
 		'no-return-assign': 0,
 		'space-before-function-paren': 0,
 		'no-await-in-loop': 0,
-		'no-restricted-syntax': [ 2, 'DebuggerStatement', 'LabeledStatement', 'WithStatement' ],
+		'no-restricted-syntax': [2, 'DebuggerStatement', 'LabeledStatement', 'WithStatement'],
 
 		'import/no-unresolved': 0,
 		'import/no-extraneous-dependencies': 0,
