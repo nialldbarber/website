@@ -1,18 +1,18 @@
 import React, { FC } from 'react'
 
-const Loading: FC = () => (
-	<div className="loader">
-		<div className="loader-group">
-			<div className="circle circle-1" />
-			<div className="circle circle-2" />
-			<div className="circle circle-3" />
-			<div className="circle circle-4" />
-			<div className="circle circle-5" />
-			<div className="circle circle-6" />
-			<div className="circle circle-7" />
-			<div className="circle circle-8" />
+const Loading: FC = () => {
+	let loader
+	for (let i = 1; i <= 8; i++) {
+		loader = <div className={`circle circle-${i}`} />
+	}
+
+	return (
+		<div className="loader">
+			<div className="loader-group">
+				{loader}
+			</div>
 		</div>
-	</div>
-)
+	)
+}
 
 export default Loading
