@@ -5,6 +5,12 @@ import { pages } from '~@utils/site-data.ts'
 import { Container, Backdrop } from '~@components/nav/styles.js'
 import { CLOSE_HAMBURGER } from '~@constants/hamburger'
 
+interface Props {
+	id: string,
+	title: string,
+	path: string
+}
+
 const Nav: FC = () => {
 	const { state, dispatch } = useContext(AppContext)
 	const { navOpen } = state
@@ -14,7 +20,7 @@ const Nav: FC = () => {
 			<Backdrop className={navOpen ? 'show' : ''} />
 			<Container className={navOpen ? 'show' : ''}>
 				<ul>
-					{pages.map(({ id, title, path }, i: number) => (
+					{pages.map(({ id, title, path }: Props, i: number) => (
 						<li
 							key={id}
 							style={{ '--animation-order': i }}
