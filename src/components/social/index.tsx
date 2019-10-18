@@ -1,12 +1,18 @@
 import React, { FC, Fragment } from 'react'
-import PropTypes from 'prop-types'
 import SVG from 'react-inlinesvg'
 import { socialLinks } from '~@utils/site-data'
 import { Container, Icon } from '~@components/social/styles'
 
+interface SocialProps {
+	id: string,
+	title: string,
+	url: string,
+	icon: string
+}
+
 const Social: FC = () => (
 	<Container>
-		{socialLinks.map(({ id, title, url, icon }) => (
+		{socialLinks.map(({ id, title, url, icon }: SocialProps) => (
 			<Fragment key={id}>
 				<a href={url} target="_blank" rel="noopener noreferrer">
 					<Icon>
@@ -19,10 +25,3 @@ const Social: FC = () => (
 )
 
 export default Social
-
-Social.propTypes = {
-	id: PropTypes.string,
-	title: PropTypes.string,
-	url: PropTypes.string,
-	icon: PropTypes.string
-}
