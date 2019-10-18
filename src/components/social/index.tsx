@@ -2,13 +2,7 @@ import React, { FC, Fragment } from 'react'
 import SVG from 'react-inlinesvg'
 import { socialLinks } from '~@utils/site-data'
 import { Container, Icon } from '~@components/social/styles'
-
-interface SocialProps {
-	id: string,
-	title: string,
-	url: string,
-	icon: string
-}
+import { SocialProps } from '~@components/social/types'
 
 const Social: FC = () => (
 	<Container>
