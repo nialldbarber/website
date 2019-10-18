@@ -1,8 +1,5 @@
 import React, { FC } from 'react'
-
-interface Props {
-	message: string
-}
+import { Props } from '~@components/error/types'
 
 const Error: FC<Props> = ({ message }) => (
 	<div>
