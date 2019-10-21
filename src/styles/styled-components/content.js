@@ -4,8 +4,14 @@ export const Content = styled.div`
 	max-width: 650px;
 	margin-left: auto;
 	padding-top: 1rem;
+	animation-name: slideInRight;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+	animation-delay: .27s;
+	animation-timing-function: cubic-bezier(.4, 0, 0, .88);
 
 	p {
+		font-weight: normal;
 		margin: 0 1rem 1rem;
 		font-size: 1.8rem;
 	}
@@ -16,10 +22,20 @@ export const BlogPageContent = styled.div`
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 20px;
 	padding: 2rem 2rem 2rem 1rem;
+	animation-name: slideInRight;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+	animation-delay: .27s;
+	animation-timing-function: cubic-bezier(.4, 0, 0, .88);
 `
 
 export const BlogContent = styled.div`
 	padding: 1rem 2rem 2rem 1rem;
+	animation-name: slideInRight;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+	animation-delay: .27s;
+	animation-timing-function: cubic-bezier(.4, 0, 0, .88);
 
 	p {
 		margin: 1rem 0;
