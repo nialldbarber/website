@@ -5,6 +5,7 @@ import Loading from '~@components/loading'
 import Error from '~@components/error'
 import StackSection from '~@components/stack-section'
 import { frontEnd, backEnd, designTypes } from '~@utils/site-data'
+import { Layout } from '~@styles/styled-components/layout'
 import { Header } from '~@styles/styled-components/header'
 
 const TechStack: FC = () => {
@@ -15,12 +16,12 @@ const TechStack: FC = () => {
 	const schema = data.pages[0]
 
 	return (
-		<div className="container">
+		<Layout>
 			<Header>{schema.title}</Header>
 			<StackSection stackType={frontEnd} name="Front End" />
 			<StackSection stackType={backEnd} name="Back End" />
 			<StackSection stackType={designTypes} name="Design" />
-		</div>
+		</Layout>
 	)
 }
 

@@ -5,6 +5,7 @@ import { GET_POSTS } from '~@pages/blog/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
 import PostCard from '~@components/post-card'
+import { Layout } from '~@styles/styled-components/layout'
 import { Header } from '~@styles/styled-components/header'
 import { BlogPageContent } from '~@styles/styled-components/content'
 
@@ -21,7 +22,7 @@ const Blog: FC = () => {
 	const schema = data.posts
 
 	return (
-		<div className="container">
+		<Layout>
 			<Header>Blog</Header>
 			<BlogPageContent className="content">
 				{schema.map(({ id, title, type }: Props) => (
@@ -30,7 +31,7 @@ const Blog: FC = () => {
 					</Link>
 				))}
 			</BlogPageContent>
-		</div>
+		</Layout>
 	)
 }
 

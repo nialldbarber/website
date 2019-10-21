@@ -4,6 +4,7 @@ import { GET_CONTACT } from '~@pages/contact/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
 import Form from '~@components/form'
+import { Layout } from '~@styles/styled-components/layout'
 import { Header } from '~@styles/styled-components/header'
 import { Content } from '~@styles/styled-components/content'
 
@@ -14,12 +15,12 @@ const Contact: FC = () => {
 	const schema = data.pages[0]
 
 	return (
-		<div className="container">
+		<Layout>
 			<Header>{schema.title}</Header>
 			<Content className="content">
 				<Form />
 			</Content>
-		</div>
+		</Layout>
 	)
 }
 

@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import { GET_ABOUT } from '~@pages/about/schema'
 import Loading from '~@components/loading'
 import Error from '~@components/error'
+import { Layout } from '~@styles/styled-components/layout'
 import { Header } from '~@styles/styled-components/header'
 import { Content } from '~@styles/styled-components/content'
 
@@ -14,12 +15,12 @@ const About: FC = () => {
 	const schema = data.pages[0]
 
 	return (
-		<div className="container">
+		<Layout>
 			<Header>{schema.title}</Header>
 			<Content className="content">
 				<ReactMarkdown source={schema.pageContent} escapeHtml={true} />
 			</Content>
-		</div>
+		</Layout>
 	)
 }
 
