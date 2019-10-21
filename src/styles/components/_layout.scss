@@ -1,23 +1,23 @@
 .container {
-  padding: $side-padding;
+	padding: $side-padding;
 
-  h1 {
-    animation-name: slideInLeft;
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
-    animation-delay: 0.125s;
-    animation-timing-function: cubic-bezier(0.4, 0, 0, 0.88);
-  }
+	h1 {
+		animation-name: slideInLeft;
+		animation-duration: .3s;
+		animation-fill-mode: both;
+		animation-delay: .125s;
+		animation-timing-function: cubic-bezier(.4, 0, 0, .88);
+	}
 }
 
 .content {
-  animation-name: slideInRight;
-  animation-duration: 0.3s;
-  animation-fill-mode: both;
-  animation-delay: 0.27s;
-  animation-timing-function: cubic-bezier(0.4, 0, 0, 0.88);
+	animation-name: slideInRight;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+	animation-delay: .27s;
+	animation-timing-function: cubic-bezier(.4, 0, 0, .88);
 
-  p {
-    font-weight: normal;
-  }
+	p {
+		font-weight: normal;
+	}
 }
