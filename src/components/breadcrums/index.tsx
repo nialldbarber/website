@@ -8,7 +8,6 @@ const Breadcrums: FC = () => (
 	<Crums className="content">
 		<Link to="/blog">
 			<SVG src={back} alt="Back" width={100} />
-			<p>Blog</p>
 		</Link>
 	</Crums>
 )
