@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react'
-import { menuReducer } from '~@reducers/menu'
+import { menuReducer } from '~/reducers/menu'
 
 const AppContext = createContext()
 
