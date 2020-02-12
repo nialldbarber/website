@@ -1,4 +1,4 @@
-import { CHANGE_HAMBURGER, CLOSE_HAMBURGER } from '~@constants/hamburger'
+import { CHANGE_HAMBURGER, CLOSE_HAMBURGER } from '~/constants/hamburger'
 
 export const menuReducer = (state, { type }) => {
 	switch (type) {

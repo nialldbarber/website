@@ -9,7 +9,7 @@ module.exports = (api) => {
 			[
 				'babel-plugin-root-import',
 				{
-					rootPathPrefix: '~@',
+					rootPathPrefix: '~',
 					rootPathSuffix: 'src'
 				}
 			]

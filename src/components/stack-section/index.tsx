@@ -1,11 +1,11 @@
 import React, { FC, useState } from 'react'
 import VizSensor from 'react-visibility-sensor'
-import Stack from '~@components/stack'
-import { Props } from '~@components/stack-section/types'
-import { StackContainer } from '~@components/stack-section/styles'
+import Stack from '~/components/stack'
+import { Props } from '~/components/stack-section/types'
+import { StackContainer } from '~/components/stack-section/styles'
 
 const StackSection: FC<Props> = ({ stackType, name }) => {
-  const [stack, setStack] = useState(false)
+  const [ stack, setStack ] = useState(false)
 
   return (
     <VizSensor onChange={(isVisible) => setStack(isVisible)} partialVisibility={true}>
