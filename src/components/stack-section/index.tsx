@@ -9,7 +9,7 @@ const StackSection: FC<Props> = ({ stackType, name }) => {
 
   return (
     <VizSensor onChange={(isVisible) => setStack(isVisible)} partialVisibility={true}>
-      <StackContainer style={{ opacity: stack ? 1 : 0.25, transition: 'opacity .25s linear' }}>
+      <StackContainer style={{ opacity: stack ? 1 : 0.25, transition: 'opacity 0.25s linear' }}>
         <Stack type={name} stack={stackType} />
       </StackContainer>
     </VizSensor>
